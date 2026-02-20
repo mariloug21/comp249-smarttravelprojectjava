@@ -305,7 +305,7 @@ public class Driver {
 		}
 		
 		// compact() method for arrays clarity
-		public static void compact(Client[] arr) {
+		public static <T> void compact(T[] arr) {
 		    int writeIndex = 0;
 		    
 		    for (int i = 0; i < arr.length; i++) { // Move all non-null elements to the front of the array
@@ -881,3 +881,4 @@ public class Driver {
 	
 
 }
+
